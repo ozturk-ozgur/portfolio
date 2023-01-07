@@ -1,0 +1,15 @@
+@import "../components/utilities";
+
+#Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $secondary-color;
+  color: $light-color;
+  height: 2.5rem;
+  font-size: 1rem;
+}

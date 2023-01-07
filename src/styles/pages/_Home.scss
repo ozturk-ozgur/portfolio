@@ -1,0 +1,12 @@
+@import "../components/utilities";
+
+#Home {
+   // max-width: 1000px;
+   // display: flex;
+   // align-items: center;
+   // justify-content: center;
+   .heading {
+      color: $primary-color;
+      font-size: 2rem;
+   }
+}

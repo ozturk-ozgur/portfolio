@@ -1,0 +1,32 @@
+// pages
+@import "../styles/pages/About";
+@import "../styles/pages/Contact";
+@import "../styles/pages/Home";
+@import "../styles/pages/NotFound";
+@import "../styles/pages/Skills";
+@import "../styles/pages/Work";
+
+// components
+@import "../styles/components/footer";
+@import "../styles/components/header";
+@import "../styles/components/layout";
+@import "../styles/components/navigation";
+@import "../styles/components/utilities";
+@import "../styles/components/base";
+@import "../styles/components/variables";
+
+// bg 
+
+.active {
+  color: red;
+}
+
+.infiniteImg {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

@@ -1,0 +1,34 @@
+@import "../styles/components/variables";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: $light-color;
+  font-family: "Prompt", sans-serif;
+  line-height: 1.5;
+
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
