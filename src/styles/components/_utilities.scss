@@ -99,9 +99,10 @@ input[class^='btn-']:hover {
 
 .border-bottom {
     height: 3px;
-    width: 3rem;
+    width: 6rem;
     background-color: $primary-color;
     margin: 0 auto 1rem auto;
+    border-radius: 20px;
 }
 
 .lead {

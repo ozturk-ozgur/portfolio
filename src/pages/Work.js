@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
+import MenuContext from "../context/MenuContext";
 
 function Work() {
-  return (
-    <div>Work</div>
-  )
+  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  useEffect(() => {
+    setIsShowMenu(false);
+  }, [setIsShowMenu]);
+  return <div>Work</div>;
 }
 
-export default Work
+export default Work;

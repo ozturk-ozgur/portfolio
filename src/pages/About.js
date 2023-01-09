@@ -1,10 +1,14 @@
+import React, { useContext, useEffect } from "react";
+import MenuContext from "../context/MenuContext";
 
-import React from 'react'
 
 function About() {
-  return (
-    <div>About</div>
-  )
+  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  useEffect(() => {
+    setIsShowMenu(false);
+  }, [setIsShowMenu]);
+
+  return <div>About</div>;
 }
 
-export default About
+export default About;

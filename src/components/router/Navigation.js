@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 import { FiMoon } from "react-icons/fi";
@@ -7,8 +7,8 @@ import { VscCode } from "react-icons/vsc";
 import { GoMarkGithub } from "react-icons/go";
 import { IoMdMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
-import infiniteImg from "../../assets/infinite-loader.gif"
-
+import MenuContext from "../../context/MenuContext";
+import {GrLinkedin} from "react-icons/gr";
 
 function Navigation() {
   const navLinks = [
@@ -19,7 +19,8 @@ function Navigation() {
     { to: "/contact", name: "Contact", index: 3 },
   ];
 
-  const [isShowMenu, setIsShowMenu] = useState(false);
+  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+
   const handleMenuIcon = () => {
     setIsShowMenu(!isShowMenu);
   };
@@ -32,6 +33,7 @@ function Navigation() {
           {isShowMenu && (
             <span className="github">
               özgür /<GoMarkGithub />
+              <GrLinkedin/>
             </span>
           )}
         </div>
@@ -59,9 +61,10 @@ function Navigation() {
             ))}
           </div>
           <div>
-            <GoMarkGithub className="contact-icons" />
-            <IoMdMail className="contact-icons" />
-            <IoLogoWhatsapp className="contact-icons" />
+            <a href=""><GrLinkedin className="contact-icons" /></a>
+            <a href=""><GoMarkGithub className="contact-icons" /></a>
+            <a href=""><IoMdMail className="contact-icons" /></a>
+            <a href=""><IoLogoWhatsapp className="contact-icons" /></a>
           </div>
         </ul>
       )}

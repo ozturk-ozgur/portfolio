@@ -5,8 +5,24 @@
    // display: flex;
    // align-items: center;
    // justify-content: center;
+   color: $medium-color;
+
    .heading {
-      color: $primary-color;
-      font-size: 2rem;
+      color: $dark-color;
+   }
+   .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+
+      .heart-icon {
+         color: red;
+         transition: .5s;
+
+         &:hover {
+            transform: scale(1.6);
+         }
+      }
    }
 }

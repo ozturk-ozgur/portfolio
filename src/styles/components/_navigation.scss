@@ -2,15 +2,15 @@
 
 #Navigation {
   margin: 5rem 3rem;
-  color: $secondary-color;
+  color: $third-color;
 
   .logo {
-    color: $primary-color;
+    color: $dark-color;
     font-size: 3rem;
     transition: 0.9s;
 
     &:hover {
-      color: $secondary-color;
+      color: $third-color;
       transform: scale(1.3);
     }
   }
@@ -28,23 +28,23 @@
 
       .darkMode,
       .iconCloseMenu {
-        color: $secondary-color;
+        color: $dark-color;
         transition: 0.5s;
         font-size: 1.5rem;
 
         &:hover {
-          color: $primary-color;
+          color: $third-color;
           transform: scale(1.5);
         }
       }
 
       .iconShowMenu {
-        color: $primary-color;
+        color: $third-color;
         transition: 0.5s;
         font-size: 1.5rem;
 
         &:hover {
-          color: $secondary-color;
+          color: $dark-color;
           transform: scale(1.5);
         }
       }
@@ -52,21 +52,21 @@
       .dark-animate {
         transition: 3s;
         transform: rotate(270deg);
-        color: $primary-color;
+        color: $third-color;
       }
-
-    
     }
-    .github {
+    span {
       display: flex;
+      font-weight:bold;
       gap: 0.5rem;
       align-items: center;
       font-family: "Rubik Marker Hatch", cursive;
-      color: $secondary-color;
+      color: $third-color;
       font-style: italic;
       transition: 0.9s;
+
       &:hover {
-        color: $primary-color;
+        color: $dark-color;
       }
     }
   }
@@ -77,14 +77,14 @@
     align-items: center;
 
     .contact-icons {
-      color: $primary-color;
+      color: $dark-color;
       font-size: 1.2rem;
       margin-left: 1rem;
       transition: 0.9s;
 
       &:hover {
         transform: scale(2);
-        color: $secondary-color;
+        color: $third-color;
       }
     }
 
@@ -96,15 +96,16 @@
       font-family: "Rubik Marker Hatch", cursive;
       font-style: italic;
       color: $dark-color;
-      transition: 0.5s;
+      transition: 0.6s;
       padding: 0.2rem 0;
-      color: $secondary-color;
+      color: $third-color;
       font-size: 2.5rem;
 
       &:hover {
-        color: $primary-color;
+        color: $dark-color;
         letter-spacing: 0.3rem;
-        border-bottom: 1px solid $secondary-color;
+        border-bottom: 1px solid $third-color;
+        font-weight: 800;
       }
     }
   }

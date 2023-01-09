@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
+import MenuContext from "../context/MenuContext";
 
 function Skills() {
-  return (
-    <div>Skills</div>
-  )
+  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  useEffect(() => {
+    setIsShowMenu(false);
+  }, [setIsShowMenu]);
+  return <div>Skills</div>;
 }
 
-export default Skills
+export default Skills;
