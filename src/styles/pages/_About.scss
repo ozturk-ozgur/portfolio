@@ -1,3 +1,56 @@
-#About {
-  
+@import "../components/utilities";
+
+#about {
+  margin-bottom: 3rem;
+  &-a {
+    .section-title {
+        color: $medium-color;
+    }
+    .lead {
+        .code {
+        font-size: 2rem;
+        color: $dark-color;
+        margin-right: 1rem ;
+    }
+
+    .code-text {
+        color: $third-color;
+        font-weight: 600;
+    }
+
+    }
+    
+  }
+
+  &-b {
+    color: #fff;
+    
+
+    .progress {
+      height: 20px;
+      background-color: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.8rem;
+
+      div {
+        height: 100%;
+        text-align: center;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
 }

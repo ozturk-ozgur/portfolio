@@ -30,7 +30,7 @@ function Navigation() {
       <section className="navIcons">
         <div className="icons">
           <VscCode className="logo" />
-          {isShowMenu && (
+          {!isShowMenu && (
             <span className="github">
               özgür /<GoMarkGithub />
               <GrLinkedin/>

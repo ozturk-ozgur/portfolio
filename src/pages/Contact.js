@@ -54,6 +54,7 @@ function Contact() {
             value={form.name}
             placeholder="Name"
             className="name"
+            required
           />
       
           <input
@@ -63,7 +64,7 @@ function Contact() {
             value={form.email}
             placeholder="Email"
             className="email"
-
+            required
           />
       
           <input
@@ -73,7 +74,7 @@ function Contact() {
             value={form.subject}
             placeholder="Subject"
             className="subject"
-
+            
           />
        
           <input
@@ -88,25 +89,26 @@ function Contact() {
           <textarea
             onChange={handleForm}
             name="message"
-            cols="30"
+            cols="20"
             rows="10"
             placeholder="Enter message"
             value={form.message}
             className="message"
+            required
           ></textarea>
          
       
-        <button className="btn-dark" onClick={handleSubmit} type="submit">
+        <button className="btn-light" onClick={handleSubmit} type="submit">
           Send
         </button>
-        <button className="btn-dark" type="reset" onClick={handleReset}>
+        <button className="btn-light" type="reset" onClick={handleReset}>
           Reset
         </button> 
         <div data-netlify-recaptcha="true"></div>
       </form>
       </section>
 
-      <section id="contact-b" class="bg-primary py-4">
+      <section id="contact-b" class="bg-primary py-1">
         <div className="container">
             <div className="contact-info">
                 <div>
