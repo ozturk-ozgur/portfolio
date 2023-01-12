@@ -8,7 +8,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { IoMdMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import MenuContext from "../../context/MenuContext";
-import {GrLinkedin} from "react-icons/gr";
+import { GrLinkedin } from "react-icons/gr";
 
 function Navigation() {
   const navLinks = [
@@ -29,12 +29,17 @@ function Navigation() {
     <nav id="Navigation">
       <section className="navIcons">
         <div className="icons">
-          <VscCode className="logo" />
+          <NavLink to="/"><VscCode className="logo" /></NavLink>
+          
           {!isShowMenu && (
-            <span className="github">
-              özgür /<GoMarkGithub />
-              <GrLinkedin/>
-            </span>
+            <a
+              className="github"
+              href="https://www.linkedin.com/in/özgür-öztürk-webDev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              özgür / <GrLinkedin />
+            </a>
           )}
         </div>
         <div className="icons">
@@ -61,10 +66,29 @@ function Navigation() {
             ))}
           </div>
           <div>
-            <a href=""><GrLinkedin className="contact-icons" /></a>
-            <a href=""><GoMarkGithub className="contact-icons" /></a>
-            <a href=""><IoMdMail className="contact-icons" /></a>
-            <a href=""><IoLogoWhatsapp className="contact-icons" /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/özgür-öztürk-webDev" rel="noopener noreferrer">
+              <GrLinkedin className="contact-icons" />
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/ozturk-ozgur"
+              rel="noopener noreferrer"
+            >
+              <GoMarkGithub className="contact-icons" />
+            </a>
+            <a
+              href="mailto:oeztuerk.oezguer@icloud.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoMdMail className="contact-icons" />
+            </a>
+             
+
+
+            <a href="tel:+15254364406" rel="noopener noreferrer" target="_blank">
+              <IoLogoWhatsapp className="contact-icons" />
+            </a>
           </div>
         </ul>
       )}

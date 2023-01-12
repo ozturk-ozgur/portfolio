@@ -11,7 +11,7 @@ function Contact() {
     name: "",
     email: "",
     phone: "",
-    subject : "",
+    subject: "",
     message: "",
   };
   const [form, setForm] = useState(() => {
@@ -41,12 +41,15 @@ function Contact() {
   return (
     <div id="Contact" className="text-center">
       <section>
-
-     
-      <h1 className="section-title">CONTACT ME</h1> 
-      <div className="border-bottom"></div>
-      <form name="contact" method="POST" data-netlify="true"  data-netlify-recaptcha="true" className="form">
-       
+        <h1 className="section-title">CONTACT ME</h1>
+        <div className="border-bottom"></div>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          className="form"
+        >
           <input
             onChange={handleForm}
             type="text"
@@ -56,7 +59,7 @@ function Contact() {
             className="name"
             required
           />
-      
+
           <input
             onChange={handleForm}
             type="email"
@@ -66,7 +69,7 @@ function Contact() {
             className="email"
             required
           />
-      
+
           <input
             onChange={handleForm}
             type="subject"
@@ -74,9 +77,8 @@ function Contact() {
             value={form.subject}
             placeholder="Subject"
             className="subject"
-            
           />
-       
+
           <input
             onChange={handleForm}
             type="tel"
@@ -85,7 +87,7 @@ function Contact() {
             placeholder="Phone"
             className="phone"
           />
-      
+
           <textarea
             onChange={handleForm}
             name="message"
@@ -96,43 +98,51 @@ function Contact() {
             className="message"
             required
           ></textarea>
-         
-      
-        <button className="btn-light" onClick={handleSubmit} type="submit">
-          Send
-        </button>
-        <button className="btn-light" type="reset" onClick={handleReset}>
-          Reset
-        </button> 
-        <div data-netlify-recaptcha="true"></div>
-      </form>
+
+          <button className="btn-light" onClick={handleSubmit} type="submit">
+            Send
+          </button>
+          <button className="btn-light" type="reset" onClick={handleReset}>
+            Reset
+          </button>
+          <div data-netlify-recaptcha="true"></div>
+        </form>
       </section>
 
       <section id="contact-b" class="bg-primary py-1">
         <div className="container">
-            <div className="contact-info">
-                <div>
-                    <a target="_blank" href="mailto:oezguer@mein.gmx" rel="noopener noreferrer">
-                    <h3>Email</h3>
-                    <p>oezguer@mein.gmx</p></a>
-                </div>
-
-                <div>
-                    <a href="tel:+15254364406">
-                    <h3>Phone</h3>
-                    <p> 01525 436 4406</p></a>
-                </div>
-
-                <div>
-                    <a href="https://goo.gl/maps/98hmxuNVNGTUKh7u7" target="_blank" rel="noopener noreferrer">
-                    <h3>Address</h3>
-                    <p> Schleswig-Holstein / Germany</p></a>
-                </div>
+          <div className="contact-info">
+            <div>
+              <a
+                target="_blank"
+                href="mailto:oeztuerk.oezguer@icloud.com"
+                rel="noopener noreferrer"
+              >
+                <h3>Email</h3>
+                <p>oeztuerk.oezguer@icloud.com</p>
+              </a>
             </div>
-        </div>
-   </section>
 
-      
+            <div>
+              <a href="tel:+15254364406">
+                <h3>Phone</h3>
+                <p> 01525 436 4406</p>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://goo.gl/maps/98hmxuNVNGTUKh7u7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Address</h3>
+                <p> Schleswig-Holstein / Germany</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
