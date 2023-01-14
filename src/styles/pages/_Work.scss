@@ -1,0 +1,36 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  // box-shadow: $dark-color 0px 8px 24px;
+
+  .item {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: black 0px 8px 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $dark-color;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      transform: translateX(-120%) translateY(-120%);
+      transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &:hover::after {
+      transform: scale(2.7) translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    img {
+      height: 25vh;
+      object-fit: contain;
+    }
+  }
+}

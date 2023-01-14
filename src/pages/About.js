@@ -30,6 +30,8 @@ function About() {
       <section id="about-a" class="text-center">
         <div className="container">
           <h2 className="section-title">About Me </h2>
+          <div className="border-bottom-secondary"></div>
+          
           <p className="lead">
             <span className="code">{code}</span>
             <span className="code-text">

@@ -14,7 +14,7 @@ function Navigation() {
   const navLinks = [
     { to: "/", name: "Home", index: 1 },
     { to: "/about", name: "About", index: 2 },
-    { to: "/skills", name: "Skills", index: 4 },
+    // { to: "/skills", name: "Skills", index: 4 },
     { to: "/work", name: "Work", index: 5 },
     { to: "/contact", name: "Contact", index: 3 },
   ];

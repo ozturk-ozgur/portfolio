@@ -105,6 +105,14 @@ input[class^='btn-']:hover {
     border-radius: 20px;
 }
 
+.border-bottom-secondary {
+    height: 3px;
+    width: 6rem;
+    background-color: $third-color;
+    margin: 0 auto 1rem auto;
+    border-radius: 20px;
+}
+
 
 
 .lead {
