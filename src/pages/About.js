@@ -11,10 +11,6 @@ import express from "../assets/express.png";
 import github from "../assets/github.png";
 import sass from "../assets/sass.webp";
 
-
-
-
-
 function About() {
   const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
   useEffect(() => {
@@ -87,19 +83,15 @@ function About() {
       <section id="about-c" className="bg-light py-1 my-2">
         <div className="container">
           <div className="about-logos">
-
-
           <img src={github} alt="github" />
             <img src={bootstrap} alt="bootstrap" />
             <img src={sass} alt="sass" />
             <img src={react} alt="react" />
             <img src={express} alt="express" />
-
             <img src={html} alt="html" />
             <img src={css} alt="css" />
             <img src={js} alt="js" />
             <img src={node} alt="node" />
-
             <img src={mongo} alt="mongo" />
           </div>
         </div>

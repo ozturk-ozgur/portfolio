@@ -9,12 +9,18 @@
 
    .heading {
       color: $dark-color;
+      text-shadow: rgb(10, 10, 10) 0px 8px 24px;
+      letter-spacing: 2px;
+
    }
    .text {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 6px;
+      text-shadow: rgb(10, 10, 10) 0px 8px 24px;
+      letter-spacing: 2px;
+
 
       .heart-icon {
          color: red;

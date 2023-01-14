@@ -24,6 +24,28 @@ function Work() {
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
+
+  let works = [
+    work1,
+    work2,
+    work3,
+    work4,
+    work5,
+    work6,
+    work7,
+    work8,
+    work9,
+    work10,
+    work11,
+    work12,
+    work13,
+    work14,
+    work15,
+    work16,
+    work17,
+    work18,
+  ];
+
   return (
     <div>
       <section id="projects" className="text-center py-2 my-2">
@@ -33,150 +55,19 @@ function Work() {
           <div className="lead">You can see my projects here</div>
 
           <div className="items">
-            <div className="item">
-              <div className="item__image">
-                <a href={work1}>
-                  <img src={work1} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work2}>
-                  <img src={work2} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work3}>
-                  <img src={work3} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work4}>
-                  <img src={work4} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work5}>
-                  <img src={work5} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work6}>
-                  <img src={work6} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work7}>
-                  <img src={work7} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work8}>
-                  <img src={work8} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work9}>
-                  <img src={work9} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work10}>
-                  <img src={work10} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work11}>
-                  <img src={work11} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work12}>
-                  <img src={work12} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work13}>
-                  <img src={work13} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work14}>
-                  <img src={work14} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work15}>
-                  <img src={work15} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work16}>
-                  <img src={work16} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work17}>
-                  <img src={work17} alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="item__image">
-                <a href={work18}>
-                  <img src={work18} alt="" />
-                </a>
-              </div>
-            </div>
+            {works.map((work, item) => {
+              return (
+                <div className="item">
+                  <div className="item__image">
+                    <a key={item} href={work}>
+                      <img src={work} alt={work} />
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
           </div>
+
         </div>
       </section>
     </div>

@@ -12,7 +12,9 @@
     padding: .7rem 2rem;
     transition: all .5s;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow:rgb(24, 14, 14) 0 6px 12px 
 }
 
 .btn {
@@ -24,7 +26,7 @@
     &-light {
         @extend %btn-shared;
         color: #333;
-        background-color: $light-color;
+        background-color: $third-color;
     }
     &-dark {
         @extend %btn-shared;
@@ -36,7 +38,7 @@
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-    background-color: $primary-color;
+    background-color: $light-color;
 }
 
 // background
@@ -95,6 +97,8 @@ input[class^='btn-']:hover {
     font-size: 2rem;
     padding-bottom: 1rem;
     text-transform: uppercase;
+    text-shadow: black 0px 12px 32px;
+
 }
 
 .border-bottom {

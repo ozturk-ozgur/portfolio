@@ -78,9 +78,11 @@
 
     .contact-icons {
       color: $dark-color;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-left: 1rem;
       transition: 0.9s;
+     
+
 
       &:hover {
         transform: scale(2);
@@ -90,6 +92,8 @@
 
     .listItems {
       margin: 1.2rem;
+      text-shadow: black 0px 24px 24px;
+
     }
 
     .navLinks {

@@ -24,6 +24,7 @@
 
   &-b {
     color: #fff;
+    box-shadow: black 0px 12px 32px;
     
 
     .progress {
@@ -41,6 +42,8 @@
   }
 
   &-c {
+    box-shadow: black 0px 12px 32px;
+
     .about-logos {
       display: grid;
       grid-template-rows: repeat(2,1fr);
