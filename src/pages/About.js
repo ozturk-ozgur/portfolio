@@ -12,22 +12,24 @@ import github from "../assets/github.png";
 import sass from "../assets/sass.webp";
 
 function About() {
-  const {  setIsShowMenu } = useContext(MenuContext);
+  const { setIsShowMenu , darkMode } = useContext(MenuContext);
+
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
-  
+
+ 
   const code = "<coder>";
 
   return (
-    <div id="about">
-      <section id="about-a" class="text-center">
-        <div className="container">
+    <div id={darkMode ? "about-dark" : "about"}>
+      <section id="about-a" className="text-center">
+        <div className="">
           <h2 className="section-title">About Me </h2>
           <div className="border-bottom-secondary"></div>
-          
+
           <p className="lead">
-            <span className="code">{code}</span>
+            <span className="code">{darkMode && code}</span>
             <span className="code-text">
               Frontend Developer who writes clean,elegant and efficient code.{" "}
             </span>
@@ -78,10 +80,10 @@ function About() {
         </div>
       </section>
 
-      <section id="about-c" className="bg-light py-1 my-2">
+      <section id="about-c" className=" py-1 my-2">
         <div className="container">
           <div className="about-logos">
-          <img src={github} alt="github" />
+            <img src={github} alt="github" />
             <img src={bootstrap} alt="bootstrap" />
             <img src={sass} alt="sass" />
             <img src={react} alt="react" />

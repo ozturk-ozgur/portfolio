@@ -47,7 +47,7 @@ function Work() {
   ];
 
   return (
-    <div>
+    
       <section id="Work" className="text-center py-2 my-2">
         <div className="container text-center">
           <h2 className="section-title">My Projects</h2>
@@ -70,7 +70,7 @@ function Work() {
 
         </div>
       </section>
-    </div>
+  
   );
 }
 

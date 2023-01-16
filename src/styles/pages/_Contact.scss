@@ -1,13 +1,14 @@
 @import "../components/utilities";
 
 #Contact {
-  // margin: 1rem 6rem;
+  margin: 4rem 8rem;
   background-color: $dark-color;
   // border: 1px solid white;
   border-radius: 5px;
   padding: 2rem .8rem;
   margin-bottom: 3rem;
   box-shadow: black 0px 12px 32px;
+
 
 
   .form {
@@ -56,6 +57,8 @@
 
   #contact-b {
     border-radius: 5px;
+    box-shadow: black 0px 12px 32px;
+
   }
   .contact-info {
     display: flex;

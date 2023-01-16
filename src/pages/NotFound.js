@@ -2,7 +2,7 @@ import React from "react";
 
 function NotFound() {
   return (
-    <div>
+    <div id="NotFound">
       <h1>404</h1>
       <div>Page not found</div>
     </div>

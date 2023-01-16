@@ -1,12 +1,26 @@
 // large
 @media (max-width: 992px) {
+  .container {
+    padding: 0 0.2rem;
+    margin: auto;
+  }
   .lead {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     word-spacing: 2px;
   }
 
+  #about {
+    margin: 3rem 1rem;
+  }
 
+  #about-dark {
+    margin: 3rem 1rem;
+  }
+  #Contact {
+    margin: 1rem .5rem;
+
+  }
   #Work {
     .items {
       grid-template-columns: repeat(2, 1fr);
@@ -17,7 +31,14 @@
 
 // mobile
 @media (max-width: 576px) {
+  
+
+  .container {
+    padding: 0 0.1rem;
+    margin: auto;
+  }
   #about {
+    margin: 3rem 1rem;
     &-a {
       .info {
         grid-template-columns: 1fr;
@@ -33,7 +54,11 @@
   }
 
   #Contact {
+    margin: 1rem 0;
     .form {
+      input, textarea, button {
+        width: 100%;
+      }
       grid-template-areas:
         "name"
         "email"

@@ -22,24 +22,33 @@
         @extend %btn-shared;
         color: #333;
         background-color: $primary-color;
+        &:hover {
+            transform: scale(1.1)
+        }
     }
     &-light {
         @extend %btn-shared;
         color: #333;
         background-color: $third-color;
+        &:hover {
+            transform: scale(1.1)
+        }
     }
     &-dark {
         @extend %btn-shared;
         color: #fff;
         background-color: $dark-color;
+        &:hover {
+            transform: scale(1.1)
+        }
     }
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover {
-    background-color: $light-color;
-}
+// button[className^='btn-']:hover,
+// a[className^='btn-']:hover,
+// input[className^='btn-']:hover {
+//     background-color: $light-color;
+// }
 
 // background
 .bg {

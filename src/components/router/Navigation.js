@@ -19,14 +19,18 @@ function Navigation() {
     { to: "/contact", name: "Contact", index: 3 },
   ];
 
-  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  const { isShowMenu, setIsShowMenu , darkMode , setDarkMode } = useContext(MenuContext);
+  
+  const changeColorMode=()=> {
+    setDarkMode(!darkMode)
+  }
 
   const handleMenuIcon = () => {
     setIsShowMenu(!isShowMenu);
   };
 
   return (
-    <nav id="Navigation">
+    <nav id={darkMode ? "NavigationDark" : "Navigation"}>
       <section className="navIcons">
         <div className="icons">
           <NavLink to="/"><VscCode className="logo" /></NavLink>
@@ -44,7 +48,10 @@ function Navigation() {
         </div>
         <div className="icons">
           <FiMoon
-            className={!isShowMenu ? "darkMode" : "darkMode dark-animate"}
+            onClick={changeColorMode}
+            // className={!isShowMenu ? "darkMode" : "darkMode dark-animate"}
+             className={ darkMode  ? "darkMode" : "lightMode"}
+
           />
           {!isShowMenu ? (
             <MdMenu className="iconShowMenu" onClick={handleMenuIcon} />
@@ -56,7 +63,7 @@ function Navigation() {
 
       {isShowMenu && (
         <ul className="list my-3">
-          <div>
+          <div className="parentListItems">
             {navLinks.map((link) => (
               <li key={link.index} className="listItems">
                 <NavLink className="navLinks" to={link.to}>
