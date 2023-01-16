@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import MenuContext from "../context/MenuContext";
 
 function Contact() {
-  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  const {  setIsShowMenu } = useContext(MenuContext);
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
@@ -72,8 +72,8 @@ function Contact() {
 
           <input
             onChange={handleForm}
-            type="subject"
-            name="phone"
+            type="text"
+            name="subject"
             value={form.subject}
             placeholder="Subject"
             className="subject"

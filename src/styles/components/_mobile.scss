@@ -1,0 +1,57 @@
+// large
+@media (max-width: 992px) {
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    word-spacing: 2px;
+  }
+
+
+  #Work {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 576px) {
+  #about {
+    &-a {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-c {
+      .about-logos {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  #Contact {
+    .form {
+      grid-template-areas:
+        "name"
+        "email"
+        "subject"
+        "phone"
+        "message"
+        "button";
+    }
+  }
+
+  #Work {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  #Footer {
+    margin-top: 2rem;
+  }
+}

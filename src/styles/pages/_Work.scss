@@ -1,36 +1,38 @@
-.items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  // box-shadow: $dark-color 0px 8px 24px;
+#Work {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    // box-shadow: $dark-color 0px 8px 24px;
 
-  .item {
-    position: relative;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: black 0px 12px 32px;
+    .item {
+      position: relative;
+      background-color: white;
+      overflow: hidden;
+      box-shadow: black 0px 12px 32px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      background-color: $primary-color;
-      opacity: 0.7;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 50%;
-      transform: translateX(-120%) translateY(-120%);
-      transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: $primary-color;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        transform: translateX(-120%) translateY(-120%);
+        transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
 
-    &:hover::after {
-      transform: scale(2.7) translateX(-50%) translateY(-50%) rotate(45deg);
-    }
+      &:hover::after {
+        transform: scale(2.7) translateX(-50%) translateY(-50%) rotate(45deg);
+      }
 
-    img {
-      height: 25vh;
-      object-fit: contain;
+      img {
+        height: 25vh;
+        object-fit: contain;
+      }
     }
   }
 }

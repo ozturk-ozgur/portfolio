@@ -20,7 +20,7 @@ import work17 from "../assets/projects-images/work-17.png";
 import work18 from "../assets/projects-images/work-18.png";
 
 function Work() {
-  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  const { setIsShowMenu } = useContext(MenuContext);
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
@@ -48,7 +48,7 @@ function Work() {
 
   return (
     <div>
-      <section id="projects" className="text-center py-2 my-2">
+      <section id="Work" className="text-center py-2 my-2">
         <div className="container text-center">
           <h2 className="section-title">My Projects</h2>
           <div className="border-bottom-secondary"></div>

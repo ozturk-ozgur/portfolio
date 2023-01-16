@@ -12,13 +12,11 @@ import github from "../assets/github.png";
 import sass from "../assets/sass.webp";
 
 function About() {
-  const { isShowMenu, setIsShowMenu } = useContext(MenuContext);
+  const {  setIsShowMenu } = useContext(MenuContext);
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
-  const onChange = React.useCallback((value, viewUpdate) => {
-    console.log("value:", value);
-  }, []);
+  
   const code = "<coder>";
 
   return (
