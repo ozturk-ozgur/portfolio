@@ -93,7 +93,7 @@ function Navigation() {
              
 
 
-            <a href="tel:+15254364406" rel="noopener noreferrer" target="_blank">
+            <a href="https://wa.me/4915254364406" rel="noopener noreferrer" target="_blank">
               <IoLogoWhatsapp className="contact-icons" />
             </a>
           </div>
