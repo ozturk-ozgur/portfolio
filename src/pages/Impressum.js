@@ -15,7 +15,7 @@ function Impressum() {
       <p>
         <strong>Kontakt:</strong>
       </p>
-      <p>Telefon: %2B49-15254364406</p>
+      <p>Telefon: +49 15254364406</p>
       <p>E-Mail: oeztuerk.oezguer@icloud.com</p>
       <p className="my-1">
         <strong>Haftungsausschluss:</strong>
