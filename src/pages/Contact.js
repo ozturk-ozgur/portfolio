@@ -45,7 +45,7 @@ function Contact() {
         <div className="border-bottom"></div>
         <form
           name="contact"
-          action="https://formspree.io/f/xlekdbgj"
+          action="https://formspree.io/f/mrgvbqaj"
           method="POST"
           className="form"
         >

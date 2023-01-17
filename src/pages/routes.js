@@ -6,6 +6,8 @@ const Contact = lazy(() => import("./Contact"));
 const Skills = lazy(() => import("./Skills"));
 const Work = lazy(() => import("./Work"));
 const NotFound = lazy(() => import("./NotFound"));
+const Impressum = lazy(() => import("./Impressum"));
+
 
 const routes = [
   { id: "1", path: "/", element: <Home /> },
@@ -14,6 +16,8 @@ const routes = [
   { id: "4", path: "/work", element: <Work /> },
   { id: "5", path: "/contact", element: <Contact /> },
   { id: "6", path: "/*", element: <NotFound /> },
+  { id: "7", path: "/impressum", element: <Impressum /> }
+
 ];
 
 export { routes };

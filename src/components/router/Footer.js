@@ -5,7 +5,7 @@ import "../../styles/components/_footer.scss";
 function Footer() {
   return (
     <footer id="Footer">
-      <NavLink to="/">Impressum</NavLink>
+      <NavLink to="/impressum">Impressum</NavLink>
       <div>Copyright © 2023. All Rights Reserved</div>
     </footer>
   );
