@@ -1,24 +1,24 @@
 import React, { useContext, useEffect } from "react";
-import MenuContext from "../context/MenuContext";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/js.png";
-import node from "../assets/node.png";
-import mongo from "../assets/mongo.jpeg";
-import react from "../assets/react.png";
 import bootstrap from "../assets/bootstrap.png";
+import css from "../assets/css.png";
 import express from "../assets/express.png";
 import github from "../assets/github.png";
+import html from "../assets/html.png";
+import js from "../assets/js.png";
+import mongo from "../assets/mongo.jpeg";
+import node from "../assets/node.png";
+import react from "../assets/react.png";
 import sass from "../assets/sass.webp";
+import MenuContext from "../context/MenuContext";
 
 function About() {
-  const { setIsShowMenu , darkMode } = useContext(MenuContext);
-
+  const { setIsShowMenu, darkMode } = useContext(MenuContext);
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
+  // console.log(crypto.randomUUID());
+  console.log("about");
 
- 
   const code = "<coder>";
 
   return (

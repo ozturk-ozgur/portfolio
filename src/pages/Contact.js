@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import MenuContext from "../context/MenuContext";
 
 function Contact() {
@@ -93,7 +93,7 @@ function Contact() {
             name="message"
             cols="20"
             rows="10"
-            placeholder="Enter message"
+            placeholder="Enter your message"
             value={form.message}
             className="message"
             required
@@ -126,7 +126,7 @@ function Contact() {
             <div>
               <a href="tel:+15254364406">
                 <h3>Phone</h3>
-                <p> 01525 436 4406</p>
+                <p>01525 436 4406</p>
               </a>
             </div>
 

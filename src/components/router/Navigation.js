@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
-import { MdMenu } from "react-icons/md";
-import { FiMoon } from "react-icons/fi";
-import { FiX } from "react-icons/fi";
-import { VscCode } from "react-icons/vsc";
+import { FiMoon, FiX } from "react-icons/fi";
 import { GoMarkGithub } from "react-icons/go";
-import { IoMdMail } from "react-icons/io";
-import { IoLogoWhatsapp } from "react-icons/io";
-import MenuContext from "../../context/MenuContext";
 import { GrLinkedin } from "react-icons/gr";
+import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
+import { MdMenu } from "react-icons/md";
+import { VscCode } from "react-icons/vsc";
+import { NavLink } from "react-router-dom";
+import MenuContext from "../../context/MenuContext";
 
 function Navigation() {
   const navLinks = [
@@ -19,11 +17,12 @@ function Navigation() {
     { to: "/contact", name: "Contact", index: 3 },
   ];
 
-  const { isShowMenu, setIsShowMenu , darkMode , setDarkMode } = useContext(MenuContext);
-  
-  const changeColorMode=()=> {
-    setDarkMode(!darkMode)
-  }
+  const { isShowMenu, setIsShowMenu, darkMode, setDarkMode } =
+    useContext(MenuContext);
+
+  const changeColorMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   const handleMenuIcon = () => {
     setIsShowMenu(!isShowMenu);
@@ -33,8 +32,10 @@ function Navigation() {
     <nav id={darkMode ? "NavigationDark" : "Navigation"}>
       <section className="navIcons">
         <div className="icons">
-          <NavLink to="/"><VscCode className="logo" /></NavLink>
-          
+          <NavLink to="/">
+            <VscCode className="logo" />
+          </NavLink>
+
           {!isShowMenu && (
             <a
               className="github"
@@ -49,9 +50,7 @@ function Navigation() {
         <div className="icons">
           <FiMoon
             onClick={changeColorMode}
-            // className={!isShowMenu ? "darkMode" : "darkMode dark-animate"}
-             className={ darkMode  ? "darkMode" : "lightMode"}
-
+            className={darkMode ? "darkMode" : "lightMode"}
           />
           {!isShowMenu ? (
             <MdMenu className="iconShowMenu" onClick={handleMenuIcon} />
@@ -73,7 +72,11 @@ function Navigation() {
             ))}
           </div>
           <div>
-            <a target="_blank" href="https://www.linkedin.com/in/özgür-öztürk-webDev" rel="noopener noreferrer">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/özgür-öztürk-webDev"
+              rel="noopener noreferrer"
+            >
               <GrLinkedin className="contact-icons" />
             </a>
             <a
@@ -90,10 +93,12 @@ function Navigation() {
             >
               <IoMdMail className="contact-icons" />
             </a>
-             
 
-
-            <a href="https://wa.me/4915254364406" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://wa.me/4915254364406"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <IoLogoWhatsapp className="contact-icons" />
             </a>
           </div>

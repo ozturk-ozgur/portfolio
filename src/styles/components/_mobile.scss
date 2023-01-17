@@ -18,8 +18,7 @@
     margin: 3rem 1rem;
   }
   #Contact {
-    margin: 1rem .5rem;
-
+    margin: 2rem 0.5rem;
   }
   #Work {
     .items {
@@ -31,8 +30,6 @@
 
 // mobile
 @media (max-width: 576px) {
-  
-
   .container {
     padding: 0 0.1rem;
     margin: auto;
@@ -54,9 +51,11 @@
   }
 
   #Contact {
-    margin: 1rem 0;
+    margin: 2rem 0;
     .form {
-      input, textarea, button {
+      input,
+      textarea,
+      button {
         width: 100%;
       }
       grid-template-areas:

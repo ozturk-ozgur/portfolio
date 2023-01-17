@@ -1,15 +1,12 @@
 @import "../components/utilities";
 
 #Contact {
-  margin: 4rem 8rem;
+  margin: 2rem 6rem;
   background-color: $dark-color;
-  // border: 1px solid white;
   border-radius: 5px;
-  padding: 2rem .8rem;
+  padding: 2rem 0.8rem;
   margin-bottom: 3rem;
   box-shadow: black 0px 12px 32px;
-
-
 
   .form {
     display: grid;
@@ -58,7 +55,6 @@
   #contact-b {
     border-radius: 5px;
     box-shadow: black 0px 12px 32px;
-
   }
   .contact-info {
     display: flex;
@@ -70,13 +66,13 @@
     margin-bottom: 1rem;
     transition: 0.5s;
     &:hover {
-        p {
-            transition: .5s;
-        }
-        p {
-            color: $dark-color;
-             font-weight: bold;   
-        }
+      p {
+        transition: 0.5s;
+      }
+      p {
+        color: $dark-color;
+        font-weight: bold;
+      }
     }
   }
 }

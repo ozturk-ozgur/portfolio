@@ -47,30 +47,26 @@ function Work() {
   ];
 
   return (
-    
-      <section id="Work" className="text-center py-2 my-2">
-        <div className="container text-center">
-          <h2 className="section-title">My Projects</h2>
-          <div className="border-bottom-secondary"></div>
-          <div className="lead">You can see my projects here</div>
-
-          <div className="items">
-            {works.map((work, item) => {
-              return (
-                <div className="item">
-                  <div className="item__image">
-                    <a key={item} href={work}>
-                      <img src={work} alt={work} />
-                    </a>
-                  </div>
+    <section id="Work" className="text-center py-2 my-2">
+      <div className="container text-center">
+        <h2 className="section-title">My Projects</h2>
+        <div className="border-bottom-secondary"></div>
+        <div className="lead">You can see my projects here</div>
+        <div className="items">
+          {works.map((work) => {
+            return (
+              <div key={crypto.randomUUID()} className="item">
+                <div className="item__image">
+                  <a href={work}>
+                    <img src={work} alt={work} />
+                  </a>
                 </div>
-              );
-            })}
-          </div>
-
+              </div>
+            );
+          })}
         </div>
-      </section>
-  
+      </div>
+    </section>
   );
 }
 

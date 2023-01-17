@@ -1,18 +1,19 @@
-import Home from './Home';
-import About from "./About";
-import Contact from "./Contact";
-import Skills from "./Skills";
-import Work from "./Work";
-import NotFound from './NotFound';
+// import Home from './Home';
+import { lazy } from "react";
+const Home = lazy(() => import("./Home"));
+const About = lazy(() => import("./About"));
+const Contact = lazy(() => import("./Contact"));
+const Skills = lazy(() => import("./Skills"));
+const Work = lazy(() => import("./Work"));
+const NotFound = lazy(() => import("./NotFound"));
 
 const routes = [
-  { id: "1", path: "/", element: <Home/> },
-  { id: "2", path: "/about", element: <About/> },
-  { id: "4", path: "/skills", element: <Skills/> },
-  { id: "5", path: "/work", element: <Work/> },
-  { id: "3", path: "/contact", element: <Contact/> },
-  { id: "6", path: "/*", element: <NotFound/> },
+  { id: "1", path: "/", element: <Home /> },
+  { id: "2", path: "/about", element: <About /> },
+  { id: "3", path: "/skills", element: <Skills /> },
+  { id: "4", path: "/work", element: <Work /> },
+  { id: "5", path: "/contact", element: <Contact /> },
+  { id: "6", path: "/*", element: <NotFound /> },
 ];
 
 export { routes };
-
