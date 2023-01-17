@@ -98,7 +98,7 @@ function Contact() {
             required
           ></textarea>
 
-          <button className="btn-light" onClick={handleSubmit} type="submit">
+          <button className="btn-light" onSubmit={handleSubmit} type="submit">
             Send
           </button>
           <button className="btn-light" type="reset" onClick={handleReset}>
