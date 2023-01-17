@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import MenuContext from "../context/MenuContext";
 
 function Contact() {
-  const {  setIsShowMenu } = useContext(MenuContext);
+  const { setIsShowMenu } = useContext(MenuContext);
   useEffect(() => {
     setIsShowMenu(false);
   }, [setIsShowMenu]);
@@ -45,9 +45,9 @@ function Contact() {
         <div className="border-bottom"></div>
         <form
           name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
+          netlify
+          netlify-honeypot="bot-field"
+          hidden
           className="form"
         >
           <input

@@ -12,8 +12,7 @@ function App() {
 
   return (
     <MenuContext.Provider
-      value={{ isShowMenu, setIsShowMenu, darkMode, setDarkMode }}
-    >
+      value={{ isShowMenu, setIsShowMenu, darkMode, setDarkMode }}>
       <div className={darkMode ? "AppDark" : "container App"}>
         <Layout>
           <Suspense fallback={<p className="loading">..loading</p>}>
