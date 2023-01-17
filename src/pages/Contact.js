@@ -45,9 +45,8 @@ function Contact() {
         <div className="border-bottom"></div>
         <form
           name="contact"
-          netlify
-          netlify-honeypot="bot-field"
-          hidden
+          action="https://formspree.io/f/xlekdbgj"
+          method="POST"
           className="form"
         >
           <input
