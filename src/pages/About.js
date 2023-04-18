@@ -49,7 +49,7 @@ function About() {
 
             <h4>Css</h4>
             <div className="progress">
-              <div style={{ width: "75%" }}></div>
+              <div style={{ width: "85%" }}></div>
             </div>
 
             <h4>Javascript</h4>
@@ -64,17 +64,17 @@ function About() {
 
             <h4>NodeJs</h4>
             <div className="progress">
-              <div style={{ width: "30%" }}></div>
+              <div style={{ width: "75%" }}></div>
             </div>
 
             <h4>Express</h4>
             <div className="progress">
-              <div style={{ width: "30%" }}></div>
+              <div style={{ width: "90%" }}></div>
             </div>
 
             <h4>MongoDb</h4>
             <div className="progress">
-              <div style={{ width: "20%" }}></div>
+              <div style={{ width: "80%" }}></div>
             </div>
           </div>
         </div>
